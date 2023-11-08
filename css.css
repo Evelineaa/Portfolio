@@ -1,0 +1,440 @@
+    body  {
+        background-image: url("IMG_20231017_212722.jpg");
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat; 
+    }
+    
+    .background {
+      max-width: 100%;
+      height: 100%;
+      display: grid;
+      margin: auto;
+      position: relative;
+      justify-items: center;
+    }
+    
+    .backgroundTwo {
+      background-color: rgba(50, 46, 41, 0.341);
+      position: absolute;
+      height: 100%;
+      z-index: 1;
+      width: 700px;
+      display: flex;
+      right: 500px;
+      margin: 50px;
+      top: 150px;
+      justify-content: center;
+      box-shadow: rgba(0,0,0,0.2) 0px 4px 6px, rgb(0,0,0,0.3) 0px 13px 25px -3px, rgba(0,0,0,0.2) 0px -3px 0px inset;
+    }
+
+    /* @media screen and (max-width: 800px) {
+      .body, .backgroundTwo , .background  {
+        width: 100% 
+      }
+    }*/
+    
+    .profiletext p {
+      position: relative;
+      top: 50px;
+      font-size: 24px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.778);
+    }
+    
+    .profilePic {
+      position: absolute;
+      z-index: 1;
+      width: 300px;
+      top: 55%;
+      border-radius: 150px;
+      box-shadow: rgba(0, 0, 0, 0.407) 0px 4px 6px, rgba(0, 0, 0, 0.402) 0px 6px 10px -3px, rgba(0, 0, 0, 0.333) 0px -3px 0px inset;
+    }
+
+
+    
+    .bubble {
+      top: 10px;
+      padding: 10px;
+      color: white;
+      text-align: center;
+      display: none;
+      font-size: 24px;
+      right: 100px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .moveCarousel {
+      position: absolute;
+      left: 35%;
+      top: 100%;
+      margin: 220px;
+    }
+    
+    .photocarousel{
+      overflow: hidden;
+      max-width: 300px;
+      position: relative;
+    }
+    
+    .photocarousel .photo img {
+      max-width: 100%;
+      max-width: 250px;
+      height: auto;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius:20px;
+    }
+    
+    .photocarousel .photo,
+    .photocarousel .photo--hidden {
+      display: none;
+    }
+    
+    .photocarousel .photo--visible {
+      display: block;
+    }
+    
+    .photocarousel .carouselButtons{
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 50%;
+      width:100%;
+      transform: translateY(-50%);
+    }
+    .carouselButtons button{
+      border-radius: 50%;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+      background-color: rgba(255, 255, 255, 0.718);
+    }
+    
+    .carouselButtons button #buttonpr--prev {
+      margin-left: 10px;
+    }
+    .carouselButtons button #buttonne--next{
+      margin-right: 10px;
+    }
+    
+    
+    .textOverlay {
+      position: absolute;
+      left: 7px;
+      top: 100px;
+      background:  rgba(50, 46, 41, 0.341);
+      box-shadow: rgba(0,0,0,0.2) 0px 4px 6px, rgb(0,0,0,0.3) 0px 13px 25px -3px, rgba(0,0,0,0.2) 0px -3px 0px inset;
+      text-align: center;
+      padding: 10px;
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.778);
+    }
+    
+    #topBar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 50px;
+      overflow: hidden;
+      background-color: rgba(50, 46, 41, 0.535);
+      z-index: 100;
+      padding: 10px;
+      border: none;
+      box-shadow: rgba(0,0,0,0.2) 0px 2px 4px, rgba(0, 0, 0, 0.165) 0px 7px 13px -3px, rgba(0, 0, 0, 0.046) 0px -3px 0px inset;
+    }
+    
+    #topBar a {
+      position: absolute;
+      top: 0px;
+      height: 40px;
+      right: 80px;
+      width: 125px;
+      padding: 0em 0.7em;
+      font-size: 12px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #f0f0f0e1;
+      border: none;
+      background: #2c312c;
+      border-radius: 5px; 
+      box-shadow: 5px 5px 10px #787878a4, 2px 2px 20px #c0c0c0a5;
+      text-align: center;
+      line-height: 40px;
+    }
+    
+    #topBar a:hover 
+    {
+       background: #e0e0e0b7;
+       -webkit-box-shadow: inset 10px 10px 30px #bebebe, inset -10px -10px 30px #ffff;
+       box-shadow: inset 10px 10px 30px #bebebe, inset -10px -10px 30px #ffff;
+    }
+    
+    .Home {
+      position: absolute;
+      right: 300px;
+    }
+    
+    .Work {
+      position: relative;
+      right: 140px;
+    }
+    
+    .Education {
+      position: absolute;
+      right: 0px;
+    }
+    
+    .content {
+      padding: 16px;
+    }
+    
+    .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+    
+    .sticky + .content {
+      padding-top: 60px;
+    }
+    
+    #linkedin_button {
+    position: absolute;
+    top: 1vw;
+    left: 68vw;
+    background-color: #366dc0ab;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    border: none;
+    box-shadow: 5px 5px 10px #787878a4, 2px 2px 20px #c0c0c0a5;
+    }
+    
+    #linkedin_button:hover {
+    background: white;
+    -webkit-box-shadow: inset 10px 10px 30px #edfbff, inset -10px -10px 30px #9fbcff;
+    box-shadow: inset 10px 10px 30px #e3ebff, inset -10px -10px 30px #dceaff;
+    color: #366dc0;
+    }
+    
+    #github_button {
+    position: absolute;
+    top: 1vw;
+    left: 64vw;
+    background-color: #0c0f13;
+    color:white;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    border: none;
+    box-shadow:5px 5px 10px #787878a4, 2px 2px 20px #c0c0c0a5;
+    }
+    
+    #github_button:hover {
+    background: white;
+    -webkit-box-shadow: inset 10px 10px 30px #c7c7c7, inset -10px -10px 30px #8b8b8b;
+    box-shadow: inset 10px 10px 30px #9e9e9e, inset -10px -10px 30px #d4d4d4;
+    color: #000000;
+    }
+    
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6 {
+      width: 350px;
+      height: 450px;
+      background: rgba(50, 46, 41, 0.535);
+      transition: all 0.4s;
+      border-radius: 30px;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+    }
+    
+    .card1 {
+      left: 200px;
+      top: 300px;
+    }
+    
+    .card2 {
+      left: 780px;
+      top: 300px;
+    }
+    .card3 {
+      right: 200px;
+      top: 300px;
+    }
+    
+    .card4 {
+      left: 200px;
+      top: 900px;
+    }
+    
+    .card5 {
+      left: 780px;
+      top: 900px;
+    }
+    
+    .card6 {
+      right: 200px;
+      top: 900px;
+    }
+    
+    .card1:hover ,
+    .card2:hover,
+    .card3:hover,
+    .card4:hover,
+    .card5:hover,
+    .card6:hover {
+      border-radius: 30px;
+      transform: scale(1.1);
+      background:  #ffffffd6;
+    }
+    
+    .firstContent,
+    .firstContentTwo, 
+    .firstContentThree,
+    .firstContentFour,
+    .firstContentFive,
+    .firstContentSix {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      border-radius: 30px; 
+      color: rgba(230, 209, 189, 0.709);
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      text-shadow: rgba(230, 209, 189, 0.718) 2px 3px 8px;
+      font-size: 25px;
+    }
+    
+    .card1:hover .firstContent, 
+    .card2:hover .firstContentTwo, 
+    .card3:hover .firstContentThree,
+    .card4:hover .firstContentFour,
+    .card5:hover .firstContentFive,
+    .card6:hover .firstContentSix{
+      height: 0px;
+      opacity: 0;
+    }
+    
+    .secondContent, 
+    .secContentTwo, 
+    .secContentThree,
+    .secContentFour,
+    .secContentFive,
+    .secContentSix {
+      height: 0%;
+      width: 100%;
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 30px;
+      text-align: center;
+      flex-direction: column;
+    }
+    
+    .card1:hover .secondContent,
+    .card2:hover .secContentTwo, 
+    .card3:hover .secContentThree,
+    .card4:hover .secContentFour,
+    .card5:hover .secContentFive,
+    .card6:hover .secContentSix{
+      opacity: 1;
+      height: 100%;
+      font-size: 30px;
+    }
+    
+    .educationinfo {
+      background-color: rgba(50, 46, 41, 0.341);
+      position: absolute;
+      z-index: 1;
+      width: 300px;
+      height: 500px;
+      left: 50px;
+      top: 100px;
+      justify-content: center;
+      box-shadow: rgba(0,0,0,0.2) 0px 4px 6px, rgb(0,0,0,0.3) 0px 13px 25px -3px, rgba(0,0,0,0.2) 0px -3px 0px inset;
+      margin: 50px;
+    }
+    
+    .educationText {
+      color: white;
+      font-size: 25px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .moreText {
+      font-size: 20px;
+      color: white;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .yearboxOne {
+      color: rgb(0, 0, 0);
+      font-weight:lighter;
+      background-color: rgb(248, 248, 248);
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      font-size: 18px;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .yearboxOne p{
+      padding: 0;
+      margin: 0;
+    }
+    
+    .educationTextTwo {
+      color: white;
+      top: 50%;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 18px;
+    }
+    
+    .moreTextTwo {
+      top: 50%;
+      color: white;
+      font-size: 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .extraEducation {
+      background-color: rgba(50, 46, 41, 0.341);
+      position: absolute;
+      width: 68%;
+      height: 500px;
+      left: 450px;
+      top: 100px;
+      justify-content: center;
+      box-shadow: rgba(0,0,0,0.2) 0px 4px 6px, rgb(0,0,0,0.3) 0px 13px 25px -3px, rgba(0,0,0,0.2) 0px -3px 0px inset;
+      margin: 50px;
+    }
+    .InfoText{
+      background-color: rgb(255, 255, 0);
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      text-align: center;
+      top: 400px;
+      font-size: 30px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      z-index: 0.5;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .background {max-width: 100%;}
+    }
